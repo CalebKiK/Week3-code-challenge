@@ -1,0 +1,25 @@
+body{
+    display: flex;
+}
+
+#films li{
+    margin-bottom: 30px;
+}
+
+#films li:hover{
+    text-decoration: underline;
+}
+
+#movie-details{
+    width: 500px;
+    cursor: pointer;
+}
+
+li:hover{
+    color: rgb(90, 41, 137);
+    cursor: pointer;
+}
+
+img{
+width: 450px;
+}
