@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
             `
             let firstMovieCard = document.createElement("ul");
             firstMovieCard.id = "first-movie";
-            
+
             document.body.appendChild(firstMovieCard);
             firstMovieCard.appendChild(cardOne);
             })
@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error("Error fetching first movie:", error))
     };
 
+// Function to fetch all the movie details
     function fetchAllMovies() {
         fetch("http://localhost:3000/films")
         .then(response => response.json())
@@ -39,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error("Error fetching movies:", error));
     };
 
+    // Function to create elements for each film
     function populateMovies(films) {
         const filmsList = document.getElementById("films");
 
@@ -95,6 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     };
 
+    // Function for buying tickets
     function buyTicket(films) {
         if (availableTicket > 0) {
             films.tickets_sold += 1;
