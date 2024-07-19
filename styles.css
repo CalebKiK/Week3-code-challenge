@@ -10,6 +10,10 @@ body{
     text-decoration: underline;
 }
 
+li{
+    list-style-type: none;
+}
+
 #movie-details{
     width: 500px;
     cursor: pointer;
@@ -21,5 +25,24 @@ li:hover{
 }
 
 img{
-width: 450px;
+width: 400px;
+}
+
+.film-item{
+    margin-right: 90px;
+    align-items: center;
+}
+
+.film-item img{
+    width: 50px;
+    margin-right: 10px;
+    margin-bottom: -20px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+button{
+    padding: 10px 20px;
 }
